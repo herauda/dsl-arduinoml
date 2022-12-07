@@ -10,5 +10,13 @@ public class map_App {
     System.out.println(" pinMode(" + 12 + ", OUTPUT);");
     System.out.println(" pinMode(" + 9 + ", INPUT);");
     System.out.println("}");
+    System.out.println("\n // Behavioral concepts");
+    System.out.println("long  time = 0; long debounce = 200; \n");
+
+    System.out.println("// State declaration");
+
+    System.out.println("\nvoid loop() { state_" + "off" + "(); } // Entering init state\n");
+
+
   }
 }

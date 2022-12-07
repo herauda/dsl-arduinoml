@@ -6,9 +6,9 @@ import jetbrains.mps.generator.runtime.Generated;
 import jetbrains.mps.generator.impl.query.QueryProviderBase;
 import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.Map;
 import jetbrains.mps.generator.impl.query.SourceNodesQuery;
 import java.util.HashMap;
@@ -21,12 +21,16 @@ import jetbrains.mps.generator.impl.query.PropertyValueQuery;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SProperty;
 import org.jetbrains.annotations.Nullable;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 @Generated
 public class QueriesGenerated extends QueryProviderBase {
   public QueriesGenerated() {
     super(1);
+  }
+  public static Object propertyMacro_GetValue_1_0(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.init_state$kLSY), PROPS.name$MnvL);
   }
   public static Object propertyMacro_GetValue_2_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(_context.getNode(), PROPS.pin$Nl_l);
@@ -66,6 +70,7 @@ public class QueriesGenerated extends QueryProviderBase {
   private final Map<String, PropertyValueQuery> pvqMethods = new HashMap<String, PropertyValueQuery>();
   {
     int i = 0;
+    pvqMethods.put("4783606769863425732", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "init_state"));
     pvqMethods.put("8546613193975461352", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc59b314L, 0xf8cc59b315L, "value"), "0"));
     pvqMethods.put("8546613193975516369", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc59b314L, 0xf8cc59b315L, "value"), "0"));
   }
@@ -85,8 +90,10 @@ public class QueriesGenerated extends QueryProviderBase {
     public Object evaluate(@NotNull PropertyMacroContext ctx) throws GenerationFailureException {
       switch (methodKey) {
         case 0:
-          return QueriesGenerated.propertyMacro_GetValue_2_0(ctx);
+          return QueriesGenerated.propertyMacro_GetValue_1_0(ctx);
         case 1:
+          return QueriesGenerated.propertyMacro_GetValue_2_0(ctx);
+        case 2:
           return QueriesGenerated.propertyMacro_GetValue_3_0(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
@@ -94,11 +101,13 @@ public class QueriesGenerated extends QueryProviderBase {
     }
   }
 
-  private static final class PROPS {
-    /*package*/ static final SProperty pin$Nl_l = MetaAdapterFactory.getProperty(0x3a20e6b063a4d28L, 0xbe2e490ba391ab9aL, 0x769bab6b038f4248L, 0x769bab6b038f4933L, "pin");
+  private static final class LINKS {
+    /*package*/ static final SReferenceLink init_state$kLSY = MetaAdapterFactory.getReferenceLink(0x3a20e6b063a4d28L, 0xbe2e490ba391ab9aL, 0x769bab6b038f5241L, 0x769bab6b0394bc56L, "init_state");
+    /*package*/ static final SContainmentLink bricks$5DVt = MetaAdapterFactory.getContainmentLink(0x3a20e6b063a4d28L, 0xbe2e490ba391ab9aL, 0x769bab6b038f5241L, 0x769bab6b038f5394L, "bricks");
   }
 
-  private static final class LINKS {
-    /*package*/ static final SContainmentLink bricks$5DVt = MetaAdapterFactory.getContainmentLink(0x3a20e6b063a4d28L, 0xbe2e490ba391ab9aL, 0x769bab6b038f5241L, 0x769bab6b038f5394L, "bricks");
+  private static final class PROPS {
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty pin$Nl_l = MetaAdapterFactory.getProperty(0x3a20e6b063a4d28L, 0xbe2e490ba391ab9aL, 0x769bab6b038f4248L, 0x769bab6b038f4933L, "pin");
   }
 }

@@ -150,6 +150,12 @@
         <ref role="v9R2y" node="7qrEQG3$Jzg" resolve="reduce_Actuator" />
       </node>
     </node>
+    <node concept="3aamgX" id="49yMgcQRBA3" role="3acgRq">
+      <ref role="30HIoZ" to="s0a4:7qrEQG3_a0M" resolve="Action" />
+      <node concept="j$656" id="49yMgcQRBAO" role="1lVwrX">
+        <ref role="v9R2y" node="49yMgcQRBAM" resolve="reduce_Action" />
+      </node>
+    </node>
     <node concept="3lhOvk" id="7qrEQG3$jit" role="3lj3bC">
       <ref role="30HIoZ" to="s0a4:7qrEQG3zP91" resolve="App" />
       <ref role="3lhOvi" node="7qrEQG3$ji$" resolve="map_App" />
@@ -432,6 +438,13 @@
           <node concept="raruj" id="7qrEQG3$NQg" role="lGtFl" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="49yMgcQRBAM">
+    <property role="TrG5h" value="reduce_Action" />
+    <ref role="3gUMe" to="s0a4:7qrEQG3_a0M" resolve="Action" />
+    <node concept="2VYdi" id="49yMgcQRBAN" role="13RCb5">
+      <node concept="raruj" id="49yMgcQREej" role="lGtFl" />
     </node>
   </node>
 </model>
