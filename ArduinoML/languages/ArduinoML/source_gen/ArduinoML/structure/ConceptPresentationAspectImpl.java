@@ -9,16 +9,26 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_Action;
   private ConceptPresentation props_Actuator;
   private ConceptPresentation props_App;
   private ConceptPresentation props_Brick;
   private ConceptPresentation props_Sensor;
+  private ConceptPresentation props_State;
+  private ConceptPresentation props_Transition;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.Action:
+        if (props_Action == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x3a20e6b063a4d28L, 0xbe2e490ba391ab9aL, 0x769bab6b0394a032L, 0x769bab6b0394a6e9L, "actuator", "", "");
+          props_Action = cpb.create();
+        }
+        return props_Action;
       case LanguageConceptSwitch.Actuator:
         if (props_Actuator == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -29,7 +39,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.App:
         if (props_App == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("App");
+          cpb.presentationByName();
           props_App = cpb.create();
         }
         return props_App;
@@ -46,6 +56,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Sensor = cpb.create();
         }
         return props_Sensor;
+      case LanguageConceptSwitch.State:
+        if (props_State == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_State = cpb.create();
+        }
+        return props_State;
+      case LanguageConceptSwitch.Transition:
+        if (props_Transition == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Transition");
+          props_Transition = cpb.create();
+        }
+        return props_Transition;
     }
     return null;
   }

@@ -9,17 +9,23 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int Actuator = 0;
-  public static final int App = 1;
-  public static final int Brick = 2;
-  public static final int Sensor = 3;
+  public static final int Action = 0;
+  public static final int Actuator = 1;
+  public static final int App = 2;
+  public static final int Brick = 3;
+  public static final int Sensor = 4;
+  public static final int State = 5;
+  public static final int Transition = 6;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x3a20e6b063a4d28L, 0xbe2e490ba391ab9aL);
+    builder.put(0x769bab6b0394a032L, Action);
     builder.put(0x769bab6b038f4abbL, Actuator);
     builder.put(0x769bab6b038f5241L, App);
     builder.put(0x769bab6b038f4248L, Brick);
     builder.put(0x769bab6b038f4f1aL, Sensor);
+    builder.put(0x769bab6b039494cdL, State);
+    builder.put(0x769bab6b0394ab51L, Transition);
     myIndex = builder.seal();
   }
 
