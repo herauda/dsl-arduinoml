@@ -882,7 +882,7 @@
                 <node concept="liA8E" id="4etlb08OpJc" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="Xl_RD" id="4etlb08OsP5" role="37wK5m">
-                    <property role="Xl_RC" value="  boolean guard = millis() - time &gt; debounce" />
+                    <property role="Xl_RC" value="  boolean guard = millis() - time &gt; debounce;" />
                   </node>
                 </node>
               </node>
