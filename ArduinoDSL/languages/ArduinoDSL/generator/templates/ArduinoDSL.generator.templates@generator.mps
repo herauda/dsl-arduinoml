@@ -302,7 +302,7 @@
             <node concept="liA8E" id="7L2BrnOJRPF" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="7L2BrnOJSac" role="37wK5m">
-                <property role="Xl_RC" value="//long time = 0; long debounce = 200;\n" />
+                <property role="Xl_RC" value="long time = 0; long debounce = 200;\n" />
               </node>
             </node>
           </node>

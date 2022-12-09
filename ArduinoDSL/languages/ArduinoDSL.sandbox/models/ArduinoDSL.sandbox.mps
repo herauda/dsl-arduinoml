@@ -73,5 +73,53 @@
       </node>
     </node>
   </node>
+  <node concept="uvP0P" id="4etlb08PUAq">
+    <property role="TrG5h" value="scenario1" />
+    <ref role="1LECtE" node="4etlb08PV2a" resolve="inactive" />
+    <node concept="uvPT8" id="4etlb08PUAN" role="uuaQn">
+      <property role="TrG5h" value="led" />
+      <property role="uvOfb" value="12" />
+    </node>
+    <node concept="uvPT8" id="4etlb08PUB8" role="uuaQn">
+      <property role="TrG5h" value="buzzer" />
+      <property role="uvOfb" value="11" />
+    </node>
+    <node concept="uu6c2" id="4etlb08PUBy" role="uuaQn">
+      <property role="TrG5h" value="button" />
+      <property role="uvOfb" value="9" />
+    </node>
+    <node concept="1LEEEg" id="4etlb08PUAs" role="1LEDkZ">
+      <property role="TrG5h" value="active" />
+      <node concept="1LEEum" id="4etlb08PUUa" role="1LEC8C">
+        <property role="1LEF9_" value="786bLk3F9_z/true" />
+        <ref role="1LECXR" node="786bLk3FyW6" resolve="led" />
+      </node>
+      <node concept="1LEEum" id="4etlb08PUY8" role="1LEC8C">
+        <property role="1LEF9_" value="786bLk3F9_z/true" />
+        <ref role="1LECXR" node="4etlb08PUB8" resolve="buzzer" />
+      </node>
+      <node concept="1LEEqB" id="4etlb08PUAt" role="1LEDPh">
+        <property role="1LEFRJ" value="786bLk3F9AA/false" />
+        <ref role="1LEEj2" node="786bLk3FyWc" resolve="button" />
+        <ref role="1LEE1G" node="4etlb08PV2a" resolve="inactive" />
+      </node>
+    </node>
+    <node concept="1LEEEg" id="4etlb08PV2a" role="1LEDkZ">
+      <property role="TrG5h" value="inactive" />
+      <node concept="1LEEqB" id="4etlb08PV2b" role="1LEDPh">
+        <property role="1LEFRJ" value="786bLk3F9_z/true" />
+        <ref role="1LEEj2" node="786bLk3FyWc" resolve="button" />
+        <ref role="1LEE1G" node="4etlb08PUAs" resolve="active" />
+      </node>
+      <node concept="1LEEum" id="4etlb08PVtl" role="1LEC8C">
+        <property role="1LEF9_" value="786bLk3F9AA/false" />
+        <ref role="1LECXR" node="786bLk3FyW6" resolve="led" />
+      </node>
+      <node concept="1LEEum" id="4etlb08PVvY" role="1LEC8C">
+        <property role="1LEF9_" value="786bLk3F9AA/false" />
+        <ref role="1LECXR" node="4etlb08PUB8" resolve="buzzer" />
+      </node>
+    </node>
+  </node>
 </model>
 
