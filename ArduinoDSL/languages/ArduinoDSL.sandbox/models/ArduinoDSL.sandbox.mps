@@ -17,10 +17,15 @@
       <concept id="998863738153197456" name="ArduinoDSL.structure.Brick" flags="ng" index="uvRbn">
         <property id="998863738153201292" name="pin" index="uvOfb" />
       </concept>
+      <concept id="6143436880393138698" name="ArduinoDSL.structure.Condition" flags="ng" index="1eB2P1">
+        <property id="6143436880393139185" name="status" index="1eB2MU" />
+        <reference id="6143436880393140575" name="sensor" index="1eB2ok" />
+      </concept>
       <concept id="8216306337486506418" name="ArduinoDSL.structure.Transition" flags="ng" index="1LEEqB">
         <property id="8216306337486508794" name="status" index="1LEFRJ" />
         <reference id="8216306337486507897" name="target" index="1LEE1G" />
         <reference id="8216306337486506967" name="sensor" index="1LEEj2" />
+        <child id="6143436880393145221" name="condition" index="1eBXje" />
       </concept>
       <concept id="8216306337486506115" name="ArduinoDSL.structure.Action" flags="ng" index="1LEEum">
         <property id="8216306337486511472" name="status" index="1LEF9_" />
@@ -85,8 +90,12 @@
       <property role="uvOfb" value="11" />
     </node>
     <node concept="uu6c2" id="4etlb08PUBy" role="uuaQn">
-      <property role="TrG5h" value="button" />
+      <property role="TrG5h" value="button1" />
       <property role="uvOfb" value="9" />
+    </node>
+    <node concept="uu6c2" id="5l1ROGrTs7W" role="uuaQn">
+      <property role="TrG5h" value="button2" />
+      <property role="uvOfb" value="8" />
     </node>
     <node concept="1LEEEg" id="4etlb08PUAs" role="1LEDkZ">
       <property role="TrG5h" value="active" />
@@ -102,6 +111,14 @@
         <property role="1LEFRJ" value="786bLk3F9AA/false" />
         <ref role="1LEEj2" node="786bLk3FyWc" resolve="button" />
         <ref role="1LEE1G" node="4etlb08PV2a" resolve="inactive" />
+        <node concept="1eB2P1" id="5l1ROGrTrdP" role="1eBXje">
+          <property role="1eB2MU" value="786bLk3F9_z/true" />
+          <ref role="1eB2ok" node="4etlb08PUBy" resolve="button1" />
+        </node>
+        <node concept="1eB2P1" id="5l1ROGrTs8j" role="1eBXje">
+          <property role="1eB2MU" value="786bLk3F9_z/true" />
+          <ref role="1eB2ok" node="5l1ROGrTs7W" resolve="button2" />
+        </node>
       </node>
     </node>
     <node concept="1LEEEg" id="4etlb08PV2a" role="1LEDkZ">
@@ -110,6 +127,14 @@
         <property role="1LEFRJ" value="786bLk3F9_z/true" />
         <ref role="1LEEj2" node="786bLk3FyWc" resolve="button" />
         <ref role="1LEE1G" node="4etlb08PUAs" resolve="active" />
+        <node concept="1eB2P1" id="5l1ROGrTsjC" role="1eBXje">
+          <property role="1eB2MU" value="786bLk3F9AA/false" />
+          <ref role="1eB2ok" node="4etlb08PUBy" resolve="button1" />
+        </node>
+        <node concept="1eB2P1" id="5l1ROGrTsjW" role="1eBXje">
+          <property role="1eB2MU" value="786bLk3F9AA/false" />
+          <ref role="1eB2ok" node="5l1ROGrTs7W" resolve="button2" />
+        </node>
       </node>
       <node concept="1LEEum" id="4etlb08PVtl" role="1LEC8C">
         <property role="1LEF9_" value="786bLk3F9AA/false" />

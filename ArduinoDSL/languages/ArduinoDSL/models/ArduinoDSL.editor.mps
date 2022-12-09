@@ -15,6 +15,7 @@
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
@@ -100,35 +101,29 @@
   </node>
   <node concept="24kQdi" id="7L2BrnOJdaG">
     <ref role="1XX52x" to="qn1e:786bLk3F8AM" resolve="Transition" />
-    <node concept="3EZMnI" id="7L2BrnOJdfy" role="2wV5jI">
-      <node concept="1iCGBv" id="7L2BrnOJdlb" role="3EZMnx">
-        <ref role="1NtTu8" to="qn1e:786bLk3F8Jn" resolve="sensor" />
-        <node concept="1sVBvm" id="7L2BrnOJdld" role="1sWHZn">
-          <node concept="3F0A7n" id="7L2BrnOJdt0" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
+    <node concept="3EZMnI" id="5l1ROGrRxbR" role="2wV5jI">
+      <node concept="3F0ifn" id="5l1ROGrT4Yj" role="3EZMnx">
+        <property role="3F0ifm" value="condition :" />
       </node>
-      <node concept="3F0ifn" id="7L2BrnOJd$K" role="3EZMnx">
-        <property role="3F0ifm" value="is" />
+      <node concept="2iRkQZ" id="5l1ROGrRxbS" role="2iSdaV" />
+      <node concept="3F2HdR" id="5l1ROGrRxdA" role="3EZMnx">
+        <ref role="1NtTu8" to="qn1e:5l1ROGrRwI5" resolve="condition" />
+        <node concept="2iRkQZ" id="5l1ROGrRxdB" role="2czzBx" />
+        <node concept="3F0ifn" id="5l1ROGrSyVE" role="2czzBI" />
       </node>
-      <node concept="l2Vlx" id="7L2BrnOJdf_" role="2iSdaV" />
-      <node concept="3F0A7n" id="7L2BrnOJdFf" role="3EZMnx">
-        <ref role="1NtTu8" to="qn1e:786bLk3F9bU" resolve="status" />
+      <node concept="3F0ifn" id="5l1ROGrRR_F" role="3EZMnx">
+        <property role="3F0ifm" value="goto :" />
       </node>
-      <node concept="3F0ifn" id="7L2BrnOJdLd" role="3EZMnx">
-        <property role="3F0ifm" value="=&gt;" />
-      </node>
-      <node concept="1iCGBv" id="7L2BrnOJdVA" role="3EZMnx">
+      <node concept="1iCGBv" id="5l1ROGrRxlN" role="3EZMnx">
         <ref role="1NtTu8" to="qn1e:786bLk3F8XT" resolve="target" />
-        <node concept="1sVBvm" id="7L2BrnOJdVC" role="1sWHZn">
-          <node concept="3F0A7n" id="7L2BrnOJe7q" role="2wV5jI">
+        <node concept="1sVBvm" id="5l1ROGrRxlP" role="1sWHZn">
+          <node concept="3F0A7n" id="5l1ROGrRxow" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
+      <node concept="3F0ifn" id="5l1ROGrSdkh" role="3EZMnx" />
     </node>
   </node>
   <node concept="24kQdi" id="7L2BrnOJell">
@@ -210,6 +205,24 @@
         <node concept="l2Vlx" id="4etlb08KmSI" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="4etlb08Klcb" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5l1ROGrRvQt">
+    <ref role="1XX52x" to="qn1e:5l1ROGrRv8a" resolve="Condition" />
+    <node concept="3EZMnI" id="5l1ROGrRw0s" role="2wV5jI">
+      <node concept="1iCGBv" id="5l1ROGrRw2h" role="3EZMnx">
+        <ref role="1NtTu8" to="qn1e:5l1ROGrRv_v" resolve="sensor" />
+        <node concept="1sVBvm" id="5l1ROGrRw2j" role="1sWHZn">
+          <node concept="3F0A7n" id="5l1ROGrRwbb" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0A7n" id="5l1ROGrRwgn" role="3EZMnx">
+        <ref role="1NtTu8" to="qn1e:5l1ROGrRvfL" resolve="status" />
+      </node>
+      <node concept="l2Vlx" id="5l1ROGrRw0v" role="2iSdaV" />
     </node>
   </node>
 </model>

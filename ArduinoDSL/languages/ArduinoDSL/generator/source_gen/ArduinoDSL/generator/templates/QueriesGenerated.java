@@ -47,10 +47,10 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getEnum(_context.getNode(), PROPS.status$6jsd).getName();
   }
   public static Object propertyMacro_GetValue_5_0(final PropertyMacroContext _context) {
-    return SPropertyOperations.getInteger(SLinkOperations.getTarget(_context.getNode(), LINKS.sensor$Exc), PROPS.pin$R6Jv);
+    return SPropertyOperations.getInteger(SLinkOperations.getTarget(_context.getNode()), PROPS.pin$R6Jv);
   }
   public static Object propertyMacro_GetValue_5_1(final PropertyMacroContext _context) {
-    return SPropertyOperations.getEnum(_context.getNode(), PROPS.status$knLy).getName();
+    return SPropertyOperations.getString(_context.getNode()).getName();
   }
   public static Object propertyMacro_GetValue_5_2(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.target$EGq7), PROPS.name$MnvL);
@@ -190,7 +190,6 @@ public class QueriesGenerated extends QueryProviderBase {
   private static final class LINKS {
     /*package*/ static final SReferenceLink init_state$$A7K = MetaAdapterFactory.getReferenceLink(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0xddcad4713a3fd72L, 0x72062f1503aca87fL, "init_state");
     /*package*/ static final SReferenceLink actuator$FUBj = MetaAdapterFactory.getReferenceLink(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0x72062f1503ac8883L, 0x72062f1503aca062L, "actuator");
-    /*package*/ static final SReferenceLink sensor$Exc = MetaAdapterFactory.getReferenceLink(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0x72062f1503ac89b2L, 0x72062f1503ac8bd7L, "sensor");
     /*package*/ static final SReferenceLink target$EGq7 = MetaAdapterFactory.getReferenceLink(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0x72062f1503ac89b2L, 0x72062f1503ac8f79L, "target");
     /*package*/ static final SContainmentLink transition$Mooh = MetaAdapterFactory.getContainmentLink(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0x72062f1503ac8585L, 0x72062f1503acb244L, "transition");
     /*package*/ static final SContainmentLink bricks$vyGh = MetaAdapterFactory.getContainmentLink(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0xddcad4713a3fd72L, 0xddcad4713a400d0L, "bricks");
@@ -202,6 +201,5 @@ public class QueriesGenerated extends QueryProviderBase {
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
     /*package*/ static final SProperty pin$R6Jv = MetaAdapterFactory.getProperty(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0xddcad4713a3df90L, 0xddcad4713a3ee8cL, "pin");
     /*package*/ static final SProperty status$6jsd = MetaAdapterFactory.getProperty(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0x72062f1503ac8883L, 0x72062f1503ac9d70L, "status");
-    /*package*/ static final SProperty status$knLy = MetaAdapterFactory.getProperty(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0x72062f1503ac89b2L, 0x72062f1503ac92faL, "status");
   }
 }
