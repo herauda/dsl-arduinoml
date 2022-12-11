@@ -141,7 +141,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:84eba671-825f-42cc-a792-11df36012a40(ArduinoDSL.structure)/8216306337486505349");
     b.version(3);
-    b.aggregate("actions", 0x72062f1503acad3dL).target(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0x72062f1503ac8883L).optional(true).ordered(true).multiple(true).origin("8216306337486515517").done();
     b.aggregate("transition", 0x72062f1503acb244L).target(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0x72062f1503ac89b2L).optional(false).ordered(true).multiple(false).origin("8216306337486516804").done();
     return b.create();
   }
@@ -152,6 +151,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.associate("target", 0x72062f1503ac8f79L).target(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0x72062f1503ac8585L).optional(false).origin("8216306337486507897").done();
     b.aggregate("condition", 0x5541df4b1bde0b85L).target(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0x5541df4b1bddf20aL).optional(false).ordered(true).multiple(true).origin("6143436880393145221").done();
+    b.aggregate("actions", 0x72062f1503acad3dL).target(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0x72062f1503ac8883L).optional(true).ordered(true).multiple(true).origin("8216306337486515517").done();
     return b.create();
   }
 }

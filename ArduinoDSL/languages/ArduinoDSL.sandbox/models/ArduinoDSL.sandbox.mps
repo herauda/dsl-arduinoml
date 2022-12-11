@@ -26,13 +26,14 @@
         <reference id="8216306337486507897" name="target" index="1LEE1G" />
         <reference id="8216306337486506967" name="sensor" index="1LEEj2" />
         <child id="6143436880393145221" name="condition" index="1eBXje" />
+        <child id="8216306337486515517" name="actions" index="1LEC8C" />
       </concept>
       <concept id="8216306337486506115" name="ArduinoDSL.structure.Action" flags="ng" index="1LEEum">
         <property id="8216306337486511472" name="status" index="1LEF9_" />
         <reference id="8216306337486512226" name="actuator" index="1LECXR" />
       </concept>
       <concept id="8216306337486505349" name="ArduinoDSL.structure.State" flags="ng" index="1LEEEg">
-        <child id="8216306337486515517" name="actions" index="1LEC8C" />
+        <child id="8216306337486515517" name="actions" index="1LEC8D" />
         <child id="8216306337486516804" name="transition" index="1LEDPh" />
       </concept>
     </language>
@@ -59,8 +60,16 @@
         <property role="1LEFRJ" value="786bLk3F9_z/true" />
         <ref role="1LEEj2" node="786bLk3FyWc" resolve="led" />
         <ref role="1LEE1G" node="786bLk3FyZW" resolve="on" />
+        <node concept="1eB2P1" id="4etlb08SndS" role="1eBXje">
+          <property role="1eB2MU" value="786bLk3F9_z/true" />
+          <ref role="1eB2ok" node="786bLk3FyWc" resolve="button" />
+        </node>
+        <node concept="1LEEum" id="4etlb08TNat" role="1LEC8C">
+          <property role="1LEF9_" value="786bLk3F9AA/false" />
+          <ref role="1LECXR" node="786bLk3FyW6" resolve="led" />
+        </node>
       </node>
-      <node concept="1LEEum" id="786bLk3FyZU" role="1LEC8C">
+      <node concept="1LEEum" id="786bLk3FyZU" role="1LEC8D">
         <property role="1LEF9_" value="786bLk3F9AA/false" />
         <ref role="1LECXR" node="786bLk3FyW6" resolve="button" />
       </node>
@@ -71,8 +80,16 @@
         <property role="1LEFRJ" value="786bLk3F9_z/true" />
         <ref role="1LEEj2" node="786bLk3FyWc" resolve="led" />
         <ref role="1LEE1G" node="786bLk3FyTC" resolve="off" />
+        <node concept="1eB2P1" id="4etlb08Snmz" role="1eBXje">
+          <property role="1eB2MU" value="786bLk3F9AA/false" />
+          <ref role="1eB2ok" node="786bLk3FyWc" resolve="button" />
+        </node>
+        <node concept="1LEEum" id="4etlb08TNe1" role="1LEC8C">
+          <property role="1LEF9_" value="786bLk3F9_z/true" />
+          <ref role="1LECXR" node="786bLk3FyW6" resolve="led" />
+        </node>
       </node>
-      <node concept="1LEEum" id="786bLk3Fz03" role="1LEC8C">
+      <node concept="1LEEum" id="786bLk3Fz03" role="1LEC8D">
         <property role="1LEF9_" value="786bLk3F9_z/true" />
         <ref role="1LECXR" node="786bLk3FyW6" resolve="button" />
       </node>
@@ -99,11 +116,11 @@
     </node>
     <node concept="1LEEEg" id="4etlb08PUAs" role="1LEDkZ">
       <property role="TrG5h" value="active" />
-      <node concept="1LEEum" id="4etlb08PUUa" role="1LEC8C">
+      <node concept="1LEEum" id="4etlb08PUUa" role="1LEC8D">
         <property role="1LEF9_" value="786bLk3F9_z/true" />
         <ref role="1LECXR" node="786bLk3FyW6" resolve="led" />
       </node>
-      <node concept="1LEEum" id="4etlb08PUY8" role="1LEC8C">
+      <node concept="1LEEum" id="4etlb08PUY8" role="1LEC8D">
         <property role="1LEF9_" value="786bLk3F9_z/true" />
         <ref role="1LECXR" node="4etlb08PUB8" resolve="buzzer" />
       </node>
@@ -112,12 +129,20 @@
         <ref role="1LEEj2" node="786bLk3FyWc" resolve="button" />
         <ref role="1LEE1G" node="4etlb08PV2a" resolve="inactive" />
         <node concept="1eB2P1" id="5l1ROGrTrdP" role="1eBXje">
-          <property role="1eB2MU" value="786bLk3F9_z/true" />
+          <property role="1eB2MU" value="786bLk3F9AA/false" />
           <ref role="1eB2ok" node="4etlb08PUBy" resolve="button1" />
         </node>
         <node concept="1eB2P1" id="5l1ROGrTs8j" role="1eBXje">
-          <property role="1eB2MU" value="786bLk3F9_z/true" />
+          <property role="1eB2MU" value="786bLk3F9AA/false" />
           <ref role="1eB2ok" node="5l1ROGrTs7W" resolve="button2" />
+        </node>
+        <node concept="1LEEum" id="4etlb08Ut2x" role="1LEC8C">
+          <property role="1LEF9_" value="786bLk3F9_z/true" />
+          <ref role="1LECXR" node="786bLk3FyW6" resolve="led" />
+        </node>
+        <node concept="1LEEum" id="4etlb08Ut4k" role="1LEC8C">
+          <property role="1LEF9_" value="786bLk3F9_z/true" />
+          <ref role="1LECXR" node="4etlb08PUB8" resolve="buzzer" />
         </node>
       </node>
     </node>
@@ -127,20 +152,28 @@
         <property role="1LEFRJ" value="786bLk3F9_z/true" />
         <ref role="1LEEj2" node="786bLk3FyWc" resolve="button" />
         <ref role="1LEE1G" node="4etlb08PUAs" resolve="active" />
+        <node concept="1LEEum" id="4etlb08Utd0" role="1LEC8C">
+          <property role="1LEF9_" value="786bLk3F9AA/false" />
+          <ref role="1LECXR" node="786bLk3FyW6" resolve="led" />
+        </node>
+        <node concept="1LEEum" id="4etlb08Utd1" role="1LEC8C">
+          <property role="1LEF9_" value="786bLk3F9AA/false" />
+          <ref role="1LECXR" node="4etlb08PUB8" resolve="buzzer" />
+        </node>
         <node concept="1eB2P1" id="5l1ROGrTsjC" role="1eBXje">
-          <property role="1eB2MU" value="786bLk3F9AA/false" />
+          <property role="1eB2MU" value="786bLk3F9_z/true" />
           <ref role="1eB2ok" node="4etlb08PUBy" resolve="button1" />
         </node>
         <node concept="1eB2P1" id="5l1ROGrTsjW" role="1eBXje">
-          <property role="1eB2MU" value="786bLk3F9AA/false" />
+          <property role="1eB2MU" value="786bLk3F9_z/true" />
           <ref role="1eB2ok" node="5l1ROGrTs7W" resolve="button2" />
         </node>
       </node>
-      <node concept="1LEEum" id="4etlb08PVtl" role="1LEC8C">
+      <node concept="1LEEum" id="4etlb08PVtl" role="1LEC8D">
         <property role="1LEF9_" value="786bLk3F9AA/false" />
         <ref role="1LECXR" node="786bLk3FyW6" resolve="led" />
       </node>
-      <node concept="1LEEum" id="4etlb08PVvY" role="1LEC8C">
+      <node concept="1LEEum" id="4etlb08PVvY" role="1LEC8D">
         <property role="1LEF9_" value="786bLk3F9AA/false" />
         <ref role="1LECXR" node="4etlb08PUB8" resolve="buzzer" />
       </node>
