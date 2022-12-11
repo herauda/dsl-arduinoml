@@ -11,17 +11,21 @@ public class map_App {
     System.out.println("  pinMode(" + 12 + ", OUTPUT);");
     System.out.println("  pinMode(" + 11 + ", OUTPUT);");
     System.out.println("  pinMode(" + 9 + ", INPUT);");
+    System.out.println("  pinMode(" + 8 + ", INPUT);");
     System.out.println("}");
 
     System.out.println("//behaviour");
     System.out.println("long time = 0; long debounce = 200;\n");
 
     System.out.println("void " + "active" + "() {");
+    System.out.println("  boolean guard = millis() - time > debounce;");
+    System.out.println("if(");
+    System.out.println("digitalRead(" + 9 + ") == " + "false" + " && ");
+    System.out.println("digitalRead(" + 8 + ") == " + "false" + " && ");
+    System.out.println(" guard ) {");
+    System.out.println("    time = millis();");
     System.out.println("  digitalWrite(" + 12 + "," + "true" + ");");
     System.out.println("  digitalWrite(" + 11 + "," + "true" + ");");
-    System.out.println("  boolean guard = millis() - time > debounce;");
-    System.out.println("  if(digitalRead(" + 9 + ") == " + "false" + " && guard ) {");
-    System.out.println("    time = millis();");
     System.out.println("    " + "inactive" + "();");
     System.out.println("  } else {");
     System.out.println("    " + "active" + "();");
@@ -29,11 +33,14 @@ public class map_App {
     System.out.println("}");
     System.out.println("");
     System.out.println("void " + "inactive" + "() {");
+    System.out.println("  boolean guard = millis() - time > debounce;");
+    System.out.println("if(");
+    System.out.println("digitalRead(" + 9 + ") == " + "true" + " && ");
+    System.out.println("digitalRead(" + 8 + ") == " + "true" + " && ");
+    System.out.println(" guard ) {");
+    System.out.println("    time = millis();");
     System.out.println("  digitalWrite(" + 12 + "," + "false" + ");");
     System.out.println("  digitalWrite(" + 11 + "," + "false" + ");");
-    System.out.println("  boolean guard = millis() - time > debounce;");
-    System.out.println("  if(digitalRead(" + 9 + ") == " + "true" + " && guard ) {");
-    System.out.println("    time = millis();");
     System.out.println("    " + "active" + "();");
     System.out.println("  } else {");
     System.out.println("    " + "inactive" + "();");
