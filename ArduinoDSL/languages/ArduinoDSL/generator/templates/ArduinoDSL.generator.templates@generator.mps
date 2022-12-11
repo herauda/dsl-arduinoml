@@ -649,7 +649,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.out" />
                 </node>
                 <node concept="liA8E" id="4etlb08RSIH" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String)" resolve="print" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="Xl_RD" id="4etlb08NBBU" role="37wK5m">
                     <property role="Xl_RC" value=" guard ) {" />
                   </node>
@@ -991,7 +991,7 @@
               <ref role="3cqZAo" to="wyt6:~System.out" />
             </node>
             <node concept="liA8E" id="4etlb08RLXM" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String)" resolve="print" />
               <node concept="3cpWs3" id="4etlb08RVIo" role="37wK5m">
                 <node concept="Xl_RD" id="4etlb08RVKh" role="3uHU7w">
                   <property role="Xl_RC" value=" &amp;&amp; " />
