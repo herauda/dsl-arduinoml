@@ -153,6 +153,10 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
+      </concept>
     </language>
   </registry>
   <node concept="bUwia" id="7U3lCXfxfpm">
@@ -201,6 +205,12 @@
       <ref role="30HIoZ" to="qn1e:5ZvtxchJ$Lp" resolve="Button" />
       <node concept="j$656" id="5ZvtxchKnaM" role="1lVwrX">
         <ref role="v9R2y" node="5ZvtxchKnaK" resolve="reduce_Button" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="5ZvtxchLlKd" role="3acgRq">
+      <ref role="30HIoZ" to="qn1e:5ZvtxchJAkx" resolve="Buzzer" />
+      <node concept="j$656" id="5ZvtxchLlKT" role="1lVwrX">
+        <ref role="v9R2y" node="5ZvtxchLlKR" resolve="reduce_Buzzer" />
       </node>
     </node>
   </node>
@@ -1072,6 +1082,59 @@
                             <node concept="2OqwBi" id="5ZvtxchKv$W" role="3clFbG">
                               <node concept="30H73N" id="5ZvtxchKvc_" role="2Oq$k0" />
                               <node concept="3TrcHB" id="5ZvtxchKvMW" role="2OqNvi">
+                                <ref role="3TsBF5" to="qn1e:RsFksjCYUc" resolve="pin" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="5ZvtxchLlKR">
+    <property role="TrG5h" value="reduce_Buzzer" />
+    <ref role="3gUMe" to="qn1e:5ZvtxchJAkx" resolve="Buzzer" />
+    <node concept="9aQIb" id="5ZvtxchLmdX" role="13RCb5">
+      <node concept="15s5l7" id="5ZvtxchLr$4" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: No template fragments found&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902e4(jetbrains.mps.lang.generator.typesystem)/7952422520064723850]&quot;;" />
+        <property role="huDt6" value="Error: No template fragments found" />
+      </node>
+      <node concept="3clFbS" id="5ZvtxchLmdY" role="9aQI4">
+        <node concept="raruj" id="5ZvtxchLmg6" role="lGtFl" />
+        <node concept="3clFbF" id="5ZvtxchLmjb" role="3cqZAp">
+          <node concept="2OqwBi" id="5ZvtxchLmMR" role="3clFbG">
+            <node concept="10M0yZ" id="5ZvtxchLml8" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="5ZvtxchLnBN" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <node concept="3cpWs3" id="5ZvtxchLppf" role="37wK5m">
+                <node concept="Xl_RD" id="5ZvtxchLpAY" role="3uHU7w">
+                  <property role="Xl_RC" value=", OUTPUT);" />
+                </node>
+                <node concept="3cpWs3" id="5ZvtxchLor1" role="3uHU7B">
+                  <node concept="Xl_RD" id="5ZvtxchLnD9" role="3uHU7B">
+                    <property role="Xl_RC" value="  pinMode(" />
+                  </node>
+                  <node concept="3cmrfG" id="5ZvtxchLotG" role="3uHU7w">
+                    <property role="3cmrfH" value="0" />
+                    <node concept="17Uvod" id="5ZvtxchLrYB" role="lGtFl">
+                      <property role="2qtEX9" value="value" />
+                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
+                      <node concept="3zFVjK" id="5ZvtxchLrYC" role="3zH0cK">
+                        <node concept="3clFbS" id="5ZvtxchLrYD" role="2VODD2">
+                          <node concept="3clFbF" id="5ZvtxchLsk5" role="3cqZAp">
+                            <node concept="2OqwBi" id="5ZvtxchLsGr" role="3clFbG">
+                              <node concept="30H73N" id="5ZvtxchLsk4" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="5ZvtxchLsUW" role="2OqNvi">
                                 <ref role="3TsBF5" to="qn1e:RsFksjCYUc" resolve="pin" />
                               </node>
                             </node>
