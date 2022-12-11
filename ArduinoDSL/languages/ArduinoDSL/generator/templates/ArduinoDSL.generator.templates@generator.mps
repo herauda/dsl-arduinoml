@@ -607,7 +607,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.out" />
                 </node>
                 <node concept="liA8E" id="4etlb08NxIC" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String)" resolve="print" />
                   <node concept="Xl_RD" id="4etlb08RS$o" role="37wK5m">
                     <property role="Xl_RC" value="if(" />
                   </node>
@@ -621,7 +621,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.out" />
                 </node>
                 <node concept="liA8E" id="4etlb08RW$8" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.Object)" resolve="print" />
                   <node concept="Xl_RD" id="4etlb08RXrz" role="37wK5m">
                     <property role="Xl_RC" value="// condition" />
                   </node>
@@ -649,7 +649,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.out" />
                 </node>
                 <node concept="liA8E" id="4etlb08RSIH" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String)" resolve="print" />
                   <node concept="Xl_RD" id="4etlb08NBBU" role="37wK5m">
                     <property role="Xl_RC" value=" guard ) {" />
                   </node>
@@ -867,6 +867,20 @@
                         </node>
                       </node>
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5ZvtxchQI6p" role="3cqZAp">
+              <node concept="2OqwBi" id="5ZvtxchQIJE" role="3clFbG">
+                <node concept="10M0yZ" id="5ZvtxchQIkB" role="2Oq$k0">
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                </node>
+                <node concept="liA8E" id="5ZvtxchQJfS" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                  <node concept="Xl_RD" id="5ZvtxchQJpu" role="37wK5m">
+                    <property role="Xl_RC" value="//curetstate" />
                   </node>
                 </node>
               </node>

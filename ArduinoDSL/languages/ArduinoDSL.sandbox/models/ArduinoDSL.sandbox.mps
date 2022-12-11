@@ -186,11 +186,15 @@
     <ref role="1LECtE" node="786bLk3FyTC" resolve="off" />
     <node concept="1eojDa" id="5ZvtxchLJwv" role="uuaQn">
       <property role="TrG5h" value="btn1" />
-      <property role="uvOfb" value="9" />
+      <property role="uvOfb" value="12" />
     </node>
     <node concept="1eohcM" id="5ZvtxchMfQ2" role="uuaQn">
       <property role="TrG5h" value="buzz" />
-      <property role="uvOfb" value="12" />
+      <property role="uvOfb" value="9" />
+    </node>
+    <node concept="uvPT8" id="5ZvtxchPtDB" role="uuaQn">
+      <property role="TrG5h" value="led" />
+      <property role="uvOfb" value="10" />
     </node>
     <node concept="1LEEEg" id="5ZvtxchLJpy" role="1LEDkZ">
       <property role="TrG5h" value="on" />
@@ -203,6 +207,10 @@
         <node concept="1LEEum" id="5ZvtxchMfYk" role="1LEC8C">
           <property role="1LEF9_" value="786bLk3F9_z/true" />
           <ref role="1LECXR" node="5ZvtxchMfQ2" resolve="buzz" />
+        </node>
+        <node concept="1LEEum" id="5ZvtxchPtIx" role="1LEC8C">
+          <property role="1LEF9_" value="786bLk3F9_z/true" />
+          <ref role="1LECXR" node="786bLk3FyW6" resolve="led" />
         </node>
       </node>
     </node>
@@ -217,6 +225,50 @@
         <node concept="1LEEum" id="5ZvtxchMfZr" role="1LEC8C">
           <property role="1LEF9_" value="786bLk3F9AA/false" />
           <ref role="1LECXR" node="5ZvtxchMfQ2" resolve="buzz" />
+        </node>
+        <node concept="1LEEum" id="5ZvtxchPtLI" role="1LEC8C">
+          <property role="1LEF9_" value="786bLk3F9AA/false" />
+          <ref role="1LECXR" node="786bLk3FyW6" resolve="led" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="uvP0P" id="5ZvtxchOWU3">
+    <property role="TrG5h" value="BasedAlarm" />
+    <ref role="1LECtE" node="786bLk3FyTC" resolve="off" />
+    <node concept="1eojDa" id="5ZvtxchOWZQ" role="uuaQn">
+      <property role="TrG5h" value="btn" />
+      <property role="uvOfb" value="12" />
+    </node>
+    <node concept="uvPT8" id="5ZvtxchQw4n" role="uuaQn">
+      <property role="TrG5h" value="led" />
+      <property role="uvOfb" value="9" />
+    </node>
+    <node concept="1LEEEg" id="5ZvtxchOWU5" role="1LEDkZ">
+      <property role="TrG5h" value="on" />
+      <node concept="1LEEqB" id="5ZvtxchOWU6" role="1LEDPh">
+        <ref role="1LEE1G" node="786bLk3FyTC" resolve="off" />
+        <node concept="1eB2P1" id="5ZvtxchOWU7" role="1eBXje">
+          <property role="1eB2MU" value="786bLk3F9AA/false" />
+          <ref role="1eB2ok" node="5ZvtxchOWZQ" resolve="btn" />
+        </node>
+        <node concept="1LEEum" id="5ZvtxchQw6R" role="1LEC8C">
+          <property role="1LEF9_" value="786bLk3F9_z/true" />
+          <ref role="1LECXR" node="786bLk3FyW6" resolve="led" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LEEEg" id="5ZvtxchOXat" role="1LEDkZ">
+      <property role="TrG5h" value="off" />
+      <node concept="1LEEqB" id="5ZvtxchOXau" role="1LEDPh">
+        <ref role="1LEE1G" node="786bLk3FyZW" resolve="on" />
+        <node concept="1eB2P1" id="5ZvtxchOXav" role="1eBXje">
+          <property role="1eB2MU" value="786bLk3F9_z/true" />
+          <ref role="1eB2ok" node="5ZvtxchOWZQ" resolve="btn" />
+        </node>
+        <node concept="1LEEum" id="5ZvtxchQwbq" role="1LEC8C">
+          <property role="1LEF9_" value="786bLk3F9AA/false" />
+          <ref role="1LECXR" node="786bLk3FyW6" resolve="led" />
         </node>
       </node>
     </node>
