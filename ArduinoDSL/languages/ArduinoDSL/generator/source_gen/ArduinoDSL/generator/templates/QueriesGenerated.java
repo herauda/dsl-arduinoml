@@ -67,6 +67,9 @@ public class QueriesGenerated extends QueryProviderBase {
   public static Object propertyMacro_GetValue_9_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(_context.getNode(), PROPS.pin$R6Jv);
   }
+  public static Object propertyMacro_GetValue_10_0(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), PROPS.pin$R6Jv);
+  }
   public static SNode sourceNodeQuery_6_0(final SourceSubstituteMacroNodeContext _context) {
     _context.putSessionObject("current_state_name", SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL));
     return SLinkOperations.getTarget(_context.getNode(), LINKS.transition$Mooh);
@@ -159,6 +162,7 @@ public class QueriesGenerated extends QueryProviderBase {
     pvqMethods.put("4872143486924581086", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "status"));
     pvqMethods.put("6908370177684007298", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc59b314L, 0xf8cc59b315L, "value"), "0"));
     pvqMethods.put("6908370177684258727", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc59b314L, 0xf8cc59b315L, "value"), "0"));
+    pvqMethods.put("6908370177686974530", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc59b314L, 0xf8cc59b315L, "value"), "0"));
   }
   @NotNull
   @Override
@@ -199,6 +203,8 @@ public class QueriesGenerated extends QueryProviderBase {
           return QueriesGenerated.propertyMacro_GetValue_8_0(ctx);
         case 11:
           return QueriesGenerated.propertyMacro_GetValue_9_0(ctx);
+        case 12:
+          return QueriesGenerated.propertyMacro_GetValue_10_0(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }

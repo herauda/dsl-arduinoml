@@ -17,6 +17,7 @@
       <concept id="998863738153197456" name="ArduinoDSL.structure.Brick" flags="ng" index="uvRbn">
         <property id="998863738153201292" name="pin" index="uvOfb" />
       </concept>
+      <concept id="6908370177686940557" name="ArduinoDSL.structure.Led" flags="ng" index="1ectQu" />
       <concept id="6908370177683776801" name="ArduinoDSL.structure.Buzzer" flags="ng" index="1eohcM" />
       <concept id="6908370177683770457" name="ArduinoDSL.structure.Button" flags="ng" index="1eojDa" />
       <concept id="6143436880393138698" name="ArduinoDSL.structure.Condition" flags="ng" index="1eB2P1">
@@ -100,20 +101,20 @@
   <node concept="uvP0P" id="4etlb08PUAq">
     <property role="TrG5h" value="scenario1" />
     <ref role="1LECtE" node="4etlb08PV2a" resolve="inactive" />
-    <node concept="uvPT8" id="4etlb08PUAN" role="uuaQn">
+    <node concept="1ectQu" id="5ZvtxchWo38" role="uuaQn">
       <property role="TrG5h" value="led" />
       <property role="uvOfb" value="12" />
     </node>
-    <node concept="uvPT8" id="4etlb08PUB8" role="uuaQn">
+    <node concept="1eohcM" id="5ZvtxchWo3D" role="uuaQn">
       <property role="TrG5h" value="buzzer" />
       <property role="uvOfb" value="11" />
     </node>
-    <node concept="uu6c2" id="4etlb08PUBy" role="uuaQn">
-      <property role="TrG5h" value="button1" />
+    <node concept="1eojDa" id="5ZvtxchWo46" role="uuaQn">
+      <property role="TrG5h" value="btn1" />
       <property role="uvOfb" value="9" />
     </node>
-    <node concept="uu6c2" id="5l1ROGrTs7W" role="uuaQn">
-      <property role="TrG5h" value="button2" />
+    <node concept="1eojDa" id="5ZvtxchWo4F" role="uuaQn">
+      <property role="TrG5h" value="btn2" />
       <property role="uvOfb" value="8" />
     </node>
     <node concept="1LEEEg" id="4etlb08PUAs" role="1LEDkZ">
@@ -132,11 +133,11 @@
         <ref role="1LEE1G" node="4etlb08PV2a" resolve="inactive" />
         <node concept="1eB2P1" id="5l1ROGrTrdP" role="1eBXje">
           <property role="1eB2MU" value="786bLk3F9AA/false" />
-          <ref role="1eB2ok" node="4etlb08PUBy" resolve="button1" />
+          <ref role="1eB2ok" node="5ZvtxchWo46" resolve="btn1" />
         </node>
         <node concept="1eB2P1" id="5l1ROGrTs8j" role="1eBXje">
           <property role="1eB2MU" value="786bLk3F9AA/false" />
-          <ref role="1eB2ok" node="5l1ROGrTs7W" resolve="button2" />
+          <ref role="1eB2ok" node="5ZvtxchWo4F" resolve="btn2" />
         </node>
         <node concept="1LEEum" id="4etlb08Ut2x" role="1LEC8C">
           <property role="1LEF9_" value="786bLk3F9_z/true" />
@@ -144,7 +145,7 @@
         </node>
         <node concept="1LEEum" id="4etlb08Ut4k" role="1LEC8C">
           <property role="1LEF9_" value="786bLk3F9_z/true" />
-          <ref role="1LECXR" node="4etlb08PUB8" resolve="buzzer" />
+          <ref role="1LECXR" node="5ZvtxchWo3D" resolve="buzzer" />
         </node>
       </node>
     </node>
@@ -160,15 +161,15 @@
         </node>
         <node concept="1LEEum" id="4etlb08Utd1" role="1LEC8C">
           <property role="1LEF9_" value="786bLk3F9AA/false" />
-          <ref role="1LECXR" node="4etlb08PUB8" resolve="buzzer" />
+          <ref role="1LECXR" node="5ZvtxchWo3D" resolve="buzzer" />
         </node>
         <node concept="1eB2P1" id="5l1ROGrTsjC" role="1eBXje">
           <property role="1eB2MU" value="786bLk3F9_z/true" />
-          <ref role="1eB2ok" node="4etlb08PUBy" resolve="button1" />
+          <ref role="1eB2ok" node="5ZvtxchWo46" resolve="btn1" />
         </node>
         <node concept="1eB2P1" id="5l1ROGrTsjW" role="1eBXje">
           <property role="1eB2MU" value="786bLk3F9_z/true" />
-          <ref role="1eB2ok" node="5l1ROGrTs7W" resolve="button2" />
+          <ref role="1eB2ok" node="5ZvtxchWo4F" resolve="btn2" />
         </node>
       </node>
       <node concept="1LEEum" id="4etlb08PVtl" role="1LEC8D">

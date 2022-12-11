@@ -260,5 +260,20 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="5ZvtxchVF0k">
+    <ref role="1XX52x" to="qn1e:5ZvtxchVEId" resolve="Led" />
+    <node concept="3EZMnI" id="5ZvtxchVF3l" role="2wV5jI">
+      <node concept="3F0ifn" id="5ZvtxchVF4m" role="3EZMnx">
+        <property role="3F0ifm" value="LED" />
+      </node>
+      <node concept="2iRfu4" id="5ZvtxchVF3o" role="2iSdaV" />
+      <node concept="3F0A7n" id="5ZvtxchVFht" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0A7n" id="5ZvtxchVFkY" role="3EZMnx">
+        <ref role="1NtTu8" to="qn1e:RsFksjCYUc" resolve="pin" />
+      </node>
+    </node>
+  </node>
 </model>
 

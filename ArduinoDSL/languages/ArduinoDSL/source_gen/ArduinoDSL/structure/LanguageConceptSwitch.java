@@ -16,9 +16,10 @@ public final class LanguageConceptSwitch {
   public static final int Button = 4;
   public static final int Buzzer = 5;
   public static final int Condition = 6;
-  public static final int Sensor = 7;
-  public static final int State = 8;
-  public static final int Transition = 9;
+  public static final int Led = 7;
+  public static final int Sensor = 8;
+  public static final int State = 9;
+  public static final int Transition = 10;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L);
@@ -29,6 +30,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x5fdf761311be4c59L, Button);
     builder.put(0x5fdf761311be6521L, Buzzer);
     builder.put(0x5541df4b1bddf20aL, Condition);
+    builder.put(0x5fdf761311eeab8dL, Led);
     builder.put(0xddcad4713a4ce45L, Sensor);
     builder.put(0x72062f1503ac8585L, State);
     builder.put(0x72062f1503ac89b2L, Transition);

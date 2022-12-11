@@ -209,5 +209,10 @@
       <ref role="20lvS9" node="RsFksjDcT5" resolve="Sensor" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5ZvtxchVEId">
+    <property role="EcuMT" value="6908370177686940557" />
+    <property role="TrG5h" value="Led" />
+    <ref role="1TJDcQ" node="RsFksjCZcf" resolve="Actuator" />
+  </node>
 </model>
 

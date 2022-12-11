@@ -23,6 +23,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptButton = createDescriptorForButton();
   /*package*/ final ConceptDescriptor myConceptBuzzer = createDescriptorForBuzzer();
   /*package*/ final ConceptDescriptor myConceptCondition = createDescriptorForCondition();
+  /*package*/ final ConceptDescriptor myConceptLed = createDescriptorForLed();
   /*package*/ final ConceptDescriptor myConceptSensor = createDescriptorForSensor();
   /*package*/ final ConceptDescriptor myConceptState = createDescriptorForState();
   /*package*/ final ConceptDescriptor myConceptTransition = createDescriptorForTransition();
@@ -41,7 +42,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActuator, myConceptApp, myConceptBrick, myConceptButton, myConceptBuzzer, myConceptCondition, myConceptSensor, myConceptState, myConceptTransition);
+    return Arrays.asList(myConceptAction, myConceptActuator, myConceptApp, myConceptBrick, myConceptButton, myConceptBuzzer, myConceptCondition, myConceptLed, myConceptSensor, myConceptState, myConceptTransition);
   }
 
   @Override
@@ -62,6 +63,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptBuzzer;
       case LanguageConceptSwitch.Condition:
         return myConceptCondition;
+      case LanguageConceptSwitch.Led:
+        return myConceptLed;
       case LanguageConceptSwitch.Sensor:
         return myConceptSensor;
       case LanguageConceptSwitch.State:
@@ -147,6 +150,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.property("status", 0x5541df4b1bddf3f1L).type(MetaIdFactory.dataTypeId(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0x72062f1503ac994eL)).origin("6143436880393139185").done();
     b.associate("sensor", 0x5541df4b1bddf95fL).target(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0xddcad4713a4ce45L).optional(false).origin("6143436880393140575").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForLed() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoDSL", "Led", 0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0x5fdf761311eeab8dL);
+    b.class_(false, false, false);
+    // extends: ArduinoDSL.structure.Actuator
+    b.super_(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0xddcad4713a3f30fL);
+    b.origin("r:84eba671-825f-42cc-a792-11df36012a40(ArduinoDSL.structure)/6908370177686940557");
+    b.version(3);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSensor() {
