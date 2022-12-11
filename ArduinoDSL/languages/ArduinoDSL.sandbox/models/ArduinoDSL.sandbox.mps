@@ -273,5 +273,57 @@
       </node>
     </node>
   </node>
+  <node concept="uvP0P" id="5ZvtxchSyYO">
+    <property role="TrG5h" value="DualCheckAlarm" />
+    <ref role="1LECtE" node="786bLk3FyTC" resolve="off" />
+    <node concept="1eojDa" id="5ZvtxchSyZD" role="uuaQn">
+      <property role="TrG5h" value="btn1" />
+      <property role="uvOfb" value="12" />
+    </node>
+    <node concept="1eojDa" id="5ZvtxchSz04" role="uuaQn">
+      <property role="TrG5h" value="btn2" />
+      <property role="uvOfb" value="11" />
+    </node>
+    <node concept="1eohcM" id="5ZvtxchSz12" role="uuaQn">
+      <property role="TrG5h" value="buzz" />
+      <property role="uvOfb" value="9" />
+    </node>
+    <node concept="1LEEEg" id="5ZvtxchSyYQ" role="1LEDkZ">
+      <property role="TrG5h" value="off" />
+      <node concept="1LEEqB" id="5ZvtxchSyYR" role="1LEDPh">
+        <ref role="1LEE1G" node="786bLk3FyZW" resolve="on" />
+        <node concept="1eB2P1" id="5ZvtxchSyYS" role="1eBXje">
+          <property role="1eB2MU" value="786bLk3F9_z/true" />
+          <ref role="1eB2ok" node="5ZvtxchLJwv" resolve="btn1" />
+        </node>
+        <node concept="1eB2P1" id="5ZvtxchSz2q" role="1eBXje">
+          <property role="1eB2MU" value="786bLk3F9_z/true" />
+          <ref role="1eB2ok" node="5ZvtxchSz04" resolve="btn2" />
+        </node>
+        <node concept="1LEEum" id="5ZvtxchSz1C" role="1LEC8C">
+          <property role="1LEF9_" value="786bLk3F9AA/false" />
+          <ref role="1LECXR" node="5ZvtxchMfQ2" resolve="buzz" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LEEEg" id="5ZvtxchSz2J" role="1LEDkZ">
+      <property role="TrG5h" value="on" />
+      <node concept="1LEEqB" id="5ZvtxchSz2K" role="1LEDPh">
+        <ref role="1LEE1G" node="786bLk3FyTC" resolve="off" />
+        <node concept="1eB2P1" id="5ZvtxchSz2L" role="1eBXje">
+          <property role="1eB2MU" value="786bLk3F9AA/false" />
+          <ref role="1eB2ok" node="5ZvtxchLJwv" resolve="btn1" />
+        </node>
+        <node concept="1eB2P1" id="5ZvtxchSz45" role="1eBXje">
+          <property role="1eB2MU" value="786bLk3F9AA/false" />
+          <ref role="1eB2ok" node="5ZvtxchSz04" resolve="btn2" />
+        </node>
+        <node concept="1LEEum" id="5ZvtxchSz30" role="1LEC8C">
+          <property role="1LEF9_" value="786bLk3F9_z/true" />
+          <ref role="1LECXR" node="5ZvtxchMfQ2" resolve="buzz" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
