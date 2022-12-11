@@ -187,17 +187,11 @@
     <property role="EcuMT" value="6908370177683776801" />
     <property role="TrG5h" value="Buzzer" />
     <ref role="1TJDcQ" node="RsFksjCZcf" resolve="Actuator" />
-    <node concept="PrWs8" id="5ZvtxchJB31" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5ZvtxchJ$Lp">
     <property role="EcuMT" value="6908370177683770457" />
     <property role="TrG5h" value="Button" />
     <ref role="1TJDcQ" node="RsFksjDcT5" resolve="Sensor" />
-    <node concept="PrWs8" id="5ZvtxchJ_Nf" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5l1ROGrRv8a">
     <property role="EcuMT" value="6143436880393138698" />

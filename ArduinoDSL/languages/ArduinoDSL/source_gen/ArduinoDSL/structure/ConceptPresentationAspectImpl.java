@@ -13,6 +13,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Actuator;
   private ConceptPresentation props_App;
   private ConceptPresentation props_Brick;
+  private ConceptPresentation props_Button;
+  private ConceptPresentation props_Buzzer;
   private ConceptPresentation props_Condition;
   private ConceptPresentation props_Sensor;
   private ConceptPresentation props_State;
@@ -50,6 +52,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Brick = cpb.create();
         }
         return props_Brick;
+      case LanguageConceptSwitch.Button:
+        if (props_Button == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Button = cpb.create();
+        }
+        return props_Button;
+      case LanguageConceptSwitch.Buzzer:
+        if (props_Buzzer == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Buzzer = cpb.create();
+        }
+        return props_Buzzer;
       case LanguageConceptSwitch.Condition:
         if (props_Condition == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

@@ -222,5 +222,35 @@
       <node concept="l2Vlx" id="5l1ROGrRw0v" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5ZvtxchKkXH">
+    <ref role="1XX52x" to="qn1e:5ZvtxchJ$Lp" resolve="Button" />
+    <node concept="3EZMnI" id="5ZvtxchKlb3" role="2wV5jI">
+      <node concept="3F0ifn" id="5ZvtxchKlnj" role="3EZMnx">
+        <property role="3F0ifm" value="Button" />
+      </node>
+      <node concept="2iRfu4" id="5ZvtxchKlb6" role="2iSdaV" />
+      <node concept="3F0A7n" id="5ZvtxchKlri" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0A7n" id="5ZvtxchKlz7" role="3EZMnx">
+        <ref role="1NtTu8" to="qn1e:RsFksjCYUc" resolve="pin" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5ZvtxchKl_S">
+    <ref role="1XX52x" to="qn1e:5ZvtxchJAkx" resolve="Buzzer" />
+    <node concept="3EZMnI" id="5ZvtxchKlCv" role="2wV5jI">
+      <node concept="3F0ifn" id="5ZvtxchKlDw" role="3EZMnx">
+        <property role="3F0ifm" value="Buzzer" />
+      </node>
+      <node concept="2iRfu4" id="5ZvtxchKlCy" role="2iSdaV" />
+      <node concept="3F0A7n" id="5ZvtxchKm9S" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0A7n" id="5ZvtxchKmds" role="3EZMnx">
+        <ref role="1NtTu8" to="qn1e:RsFksjCYUc" resolve="pin" />
+      </node>
+    </node>
+  </node>
 </model>
 

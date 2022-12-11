@@ -20,6 +20,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptActuator = createDescriptorForActuator();
   /*package*/ final ConceptDescriptor myConceptApp = createDescriptorForApp();
   /*package*/ final ConceptDescriptor myConceptBrick = createDescriptorForBrick();
+  /*package*/ final ConceptDescriptor myConceptButton = createDescriptorForButton();
+  /*package*/ final ConceptDescriptor myConceptBuzzer = createDescriptorForBuzzer();
   /*package*/ final ConceptDescriptor myConceptCondition = createDescriptorForCondition();
   /*package*/ final ConceptDescriptor myConceptSensor = createDescriptorForSensor();
   /*package*/ final ConceptDescriptor myConceptState = createDescriptorForState();
@@ -39,7 +41,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActuator, myConceptApp, myConceptBrick, myConceptCondition, myConceptSensor, myConceptState, myConceptTransition);
+    return Arrays.asList(myConceptAction, myConceptActuator, myConceptApp, myConceptBrick, myConceptButton, myConceptBuzzer, myConceptCondition, myConceptSensor, myConceptState, myConceptTransition);
   }
 
   @Override
@@ -54,6 +56,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptApp;
       case LanguageConceptSwitch.Brick:
         return myConceptBrick;
+      case LanguageConceptSwitch.Button:
+        return myConceptButton;
+      case LanguageConceptSwitch.Buzzer:
+        return myConceptBuzzer;
       case LanguageConceptSwitch.Condition:
         return myConceptCondition;
       case LanguageConceptSwitch.Sensor:
@@ -114,6 +120,24 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:84eba671-825f-42cc-a792-11df36012a40(ArduinoDSL.structure)/998863738153197456");
     b.version(3);
     b.property("pin", 0xddcad4713a3ee8cL).type(PrimitiveTypeId.INTEGER).origin("998863738153201292").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForButton() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoDSL", "Button", 0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0x5fdf761311be4c59L);
+    b.class_(false, false, false);
+    // extends: ArduinoDSL.structure.Sensor
+    b.super_(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0xddcad4713a4ce45L);
+    b.origin("r:84eba671-825f-42cc-a792-11df36012a40(ArduinoDSL.structure)/6908370177683770457");
+    b.version(3);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForBuzzer() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoDSL", "Buzzer", 0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0x5fdf761311be6521L);
+    b.class_(false, false, false);
+    // extends: ArduinoDSL.structure.Actuator
+    b.super_(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0xddcad4713a3f30fL);
+    b.origin("r:84eba671-825f-42cc-a792-11df36012a40(ArduinoDSL.structure)/6908370177683776801");
+    b.version(3);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForCondition() {

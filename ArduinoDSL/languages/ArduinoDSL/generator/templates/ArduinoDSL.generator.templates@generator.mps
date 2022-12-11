@@ -47,6 +47,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -73,9 +74,6 @@
       </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
-      </concept>
-      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
-        <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -199,6 +197,12 @@
         <ref role="v9R2y" node="4etlb08RLHL" resolve="reduce_Condition" />
       </node>
     </node>
+    <node concept="3aamgX" id="5ZvtxchKn9T" role="3acgRq">
+      <ref role="30HIoZ" to="qn1e:5ZvtxchJ$Lp" resolve="Button" />
+      <node concept="j$656" id="5ZvtxchKnaM" role="1lVwrX">
+        <ref role="v9R2y" node="5ZvtxchKnaK" resolve="reduce_Button" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="786bLk3E05C">
     <property role="TrG5h" value="map_App" />
@@ -208,9 +212,7 @@
       <node concept="37vLTG" id="786bLk3E7NS" role="3clF46">
         <property role="TrG5h" value="args" />
         <node concept="10Q1$e" id="786bLk3E82D" role="1tU5fm">
-          <node concept="3uibUv" id="786bLk3E7YU" role="10Q1$1">
-            <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-          </node>
+          <node concept="17QB3L" id="5ZvtxchKNtg" role="10Q1$1" />
         </node>
       </node>
       <node concept="3clFbS" id="786bLk3E0yF" role="3clF47">
@@ -637,7 +639,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.out" />
                 </node>
                 <node concept="liA8E" id="4etlb08RSIH" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println()" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="Xl_RD" id="4etlb08NBBU" role="37wK5m">
                     <property role="Xl_RC" value=" guard ) {" />
                   </node>
@@ -1022,6 +1024,55 @@
                               </node>
                               <node concept="liA8E" id="4etlb08SAdk" role="2OqNvi">
                                 <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getName()" resolve="getName" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="5ZvtxchKnaK">
+    <property role="TrG5h" value="reduce_Button" />
+    <ref role="3gUMe" to="qn1e:5ZvtxchJ$Lp" resolve="Button" />
+    <node concept="9aQIb" id="5ZvtxchKneZ" role="13RCb5">
+      <node concept="3clFbS" id="5ZvtxchKnf0" role="9aQI4">
+        <node concept="raruj" id="5ZvtxchKof1" role="lGtFl" />
+        <node concept="3clFbF" id="5ZvtxchKoi0" role="3cqZAp">
+          <node concept="2OqwBi" id="5ZvtxchKoLl" role="3clFbG">
+            <node concept="10M0yZ" id="5ZvtxchKojX" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="5ZvtxchKp__" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <node concept="3cpWs3" id="5ZvtxchKtkK" role="37wK5m">
+                <node concept="Xl_RD" id="5ZvtxchKtsH" role="3uHU7w">
+                  <property role="Xl_RC" value=", INPUT);" />
+                </node>
+                <node concept="3cpWs3" id="5ZvtxchKsgM" role="3uHU7B">
+                  <node concept="Xl_RD" id="5ZvtxchKpAV" role="3uHU7B">
+                    <property role="Xl_RC" value="  pinMode(" />
+                  </node>
+                  <node concept="3cmrfG" id="5ZvtxchKspc" role="3uHU7w">
+                    <property role="3cmrfH" value="0" />
+                    <node concept="17Uvod" id="5ZvtxchKuA2" role="lGtFl">
+                      <property role="2qtEX9" value="value" />
+                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
+                      <node concept="3zFVjK" id="5ZvtxchKuA3" role="3zH0cK">
+                        <node concept="3clFbS" id="5ZvtxchKuA4" role="2VODD2">
+                          <node concept="3clFbF" id="5ZvtxchKvcA" role="3cqZAp">
+                            <node concept="2OqwBi" id="5ZvtxchKv$W" role="3clFbG">
+                              <node concept="30H73N" id="5ZvtxchKvc_" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="5ZvtxchKvMW" role="2OqNvi">
+                                <ref role="3TsBF5" to="qn1e:RsFksjCYUc" resolve="pin" />
                               </node>
                             </node>
                           </node>
