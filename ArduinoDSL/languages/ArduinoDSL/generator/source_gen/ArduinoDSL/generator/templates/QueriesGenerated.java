@@ -47,10 +47,10 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getEnum(_context.getNode(), PROPS.status$6jsd).getName();
   }
   public static Object propertyMacro_GetValue_5_0(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.target$EGq7), PROPS.name$MnvL);
+    return "" + _context.getSessionObject("current_state_name");
   }
   public static Object propertyMacro_GetValue_5_1(final PropertyMacroContext _context) {
-    return "" + _context.getSessionObject("current_state_name");
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.target$EGq7), PROPS.name$MnvL);
   }
   public static Object propertyMacro_GetValue_6_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
@@ -155,8 +155,8 @@ public class QueriesGenerated extends QueryProviderBase {
     pvqMethods.put("4872143486922466379", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc59b314L, 0xf8cc59b315L, "value"), "0"));
     pvqMethods.put("4872143486923170760", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc59b314L, 0xf8cc59b315L, "value"), "0"));
     pvqMethods.put("4872143486923188867", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "status"));
-    pvqMethods.put("4872143486923522366", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "state"));
     pvqMethods.put("4872143486923569179", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "current_state"));
+    pvqMethods.put("4872143486923522366", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "state"));
     pvqMethods.put("4872143486923714449", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "state"));
     pvqMethods.put("4872143486924572253", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc59b314L, 0xf8cc59b315L, "value"), "0"));
     pvqMethods.put("4872143486924581086", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "status"));

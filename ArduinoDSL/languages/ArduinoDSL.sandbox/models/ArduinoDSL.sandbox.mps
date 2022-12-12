@@ -132,11 +132,11 @@
         <ref role="1LEEj2" node="786bLk3FyWc" resolve="button" />
         <ref role="1LEE1G" node="4etlb08PV2a" resolve="inactive" />
         <node concept="1eB2P1" id="5l1ROGrTrdP" role="1eBXje">
-          <property role="1eB2MU" value="786bLk3F9AA/false" />
+          <property role="1eB2MU" value="786bLk3F9_z/true" />
           <ref role="1eB2ok" node="5ZvtxchWo46" resolve="btn1" />
         </node>
         <node concept="1eB2P1" id="5l1ROGrTs8j" role="1eBXje">
-          <property role="1eB2MU" value="786bLk3F9AA/false" />
+          <property role="1eB2MU" value="786bLk3F9_z/true" />
           <ref role="1eB2ok" node="5ZvtxchWo4F" resolve="btn2" />
         </node>
         <node concept="1LEEum" id="4etlb08Ut2x" role="1LEC8C">
@@ -164,11 +164,11 @@
           <ref role="1LECXR" node="5ZvtxchWo3D" resolve="buzzer" />
         </node>
         <node concept="1eB2P1" id="5l1ROGrTsjC" role="1eBXje">
-          <property role="1eB2MU" value="786bLk3F9_z/true" />
+          <property role="1eB2MU" value="786bLk3F9AA/false" />
           <ref role="1eB2ok" node="5ZvtxchWo46" resolve="btn1" />
         </node>
         <node concept="1eB2P1" id="5l1ROGrTsjW" role="1eBXje">
-          <property role="1eB2MU" value="786bLk3F9_z/true" />
+          <property role="1eB2MU" value="786bLk3F9AA/false" />
           <ref role="1eB2ok" node="5ZvtxchWo4F" resolve="btn2" />
         </node>
       </node>

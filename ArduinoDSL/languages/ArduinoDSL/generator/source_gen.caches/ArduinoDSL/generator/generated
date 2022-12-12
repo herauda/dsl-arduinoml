@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<product version="3" modelHash="-55vx8i5p0hv48q6vzdoat6t28arr9bh">
-=======
-<product version="3" modelHash="bqcutnfkr2sq5uzb7o1it62xy1x27vp">
->>>>>>> 9f00df1ef183b614534d1e33ffa50a01f4b9ed5f
+<product version="3" modelHash="-527hlytwzsgpw8dqelbbwksgisruja">
   <files names="Generator.java" />
 </product>
 

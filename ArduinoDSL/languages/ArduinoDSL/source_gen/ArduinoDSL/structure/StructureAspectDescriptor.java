@@ -96,7 +96,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForActuator() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoDSL", "Actuator", 0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0xddcad4713a3f30fL);
-    b.class_(false, false, false);
+    b.class_(false, true, false);
     // extends: ArduinoDSL.structure.Brick
     b.super_(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0xddcad4713a3df90L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
@@ -163,7 +163,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForSensor() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoDSL", "Sensor", 0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0xddcad4713a4ce45L);
-    b.class_(false, false, false);
+    b.class_(false, true, false);
     // extends: ArduinoDSL.structure.Brick
     b.super_(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0xddcad4713a3df90L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
