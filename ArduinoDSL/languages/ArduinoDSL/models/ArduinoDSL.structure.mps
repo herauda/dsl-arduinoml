@@ -55,6 +55,7 @@
   <node concept="1TIwiD" id="RsFksjCZcf">
     <property role="EcuMT" value="998863738153202447" />
     <property role="TrG5h" value="Actuator" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="RsFksjCXYg" resolve="Brick" />
     <node concept="PrWs8" id="RsFksjCZtK" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -109,6 +110,7 @@
   <node concept="1TIwiD" id="RsFksjDcT5">
     <property role="EcuMT" value="998863738153258565" />
     <property role="TrG5h" value="Sensor" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="RsFksjCXYg" resolve="Brick" />
     <node concept="PrWs8" id="7U3lCXfxfXs" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
