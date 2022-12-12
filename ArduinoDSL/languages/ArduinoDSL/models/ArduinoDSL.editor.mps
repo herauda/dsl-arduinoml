@@ -200,12 +200,9 @@
       <node concept="3F0ifn" id="5ZvtxchTZA0" role="3EZMnx">
         <property role="3F0ifm" value="Declaration :" />
       </node>
-      <node concept="3F0ifn" id="5ZvtxchUwlj" role="3EZMnx" />
       <node concept="3EZMnI" id="4etlb08Kn_d" role="3EZMnx">
         <node concept="VPM3Z" id="4etlb08Kn_f" role="3F10Kt" />
-        <node concept="3F0ifn" id="4etlb09133A" role="3EZMnx">
-          <property role="3F0ifm" value="---&gt;" />
-        </node>
+        <node concept="3XFhqQ" id="4etlb092xAy" role="3EZMnx" />
         <node concept="3F2HdR" id="4etlb08KnEU" role="3EZMnx">
           <ref role="1NtTu8" to="qn1e:RsFksjD03g" resolve="bricks" />
           <node concept="2iRkQZ" id="4etlb08KnEX" role="2czzBx" />
@@ -217,7 +214,6 @@
       <node concept="3F0ifn" id="5ZvtxchUwqq" role="3EZMnx">
         <property role="3F0ifm" value="States" />
       </node>
-      <node concept="3F0ifn" id="5ZvtxchUwrI" role="3EZMnx" />
       <node concept="3EZMnI" id="4etlb08KmSD" role="3EZMnx">
         <node concept="VPM3Z" id="4etlb08KmSF" role="3F10Kt" />
         <node concept="3XFhqQ" id="4etlb08KXP9" role="3EZMnx" />
