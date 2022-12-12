@@ -209,5 +209,15 @@
       <ref role="20lvS9" node="RsFksjDcT5" resolve="Sensor" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4KVCDJwus5i">
+    <property role="EcuMT" value="5493162960878158162" />
+    <property role="TrG5h" value="SerialCondition" />
+    <ref role="1TJDcQ" node="5l1ROGrRv8a" resolve="Condition" />
+  </node>
+  <node concept="1TIwiD" id="4KVCDJwuYli">
+    <property role="EcuMT" value="5493162960878298450" />
+    <property role="TrG5h" value="SerialAction" />
+    <ref role="1TJDcQ" node="786bLk3F8y3" resolve="Action" />
+  </node>
 </model>
 
