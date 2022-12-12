@@ -18,8 +18,10 @@ public final class LanguageConceptSwitch {
   public static final int Condition = 6;
   public static final int Led = 7;
   public static final int Sensor = 8;
-  public static final int State = 9;
-  public static final int Transition = 10;
+  public static final int SerialAction = 9;
+  public static final int SerialCondition = 10;
+  public static final int State = 11;
+  public static final int Transition = 12;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L);
@@ -32,6 +34,8 @@ public final class LanguageConceptSwitch {
     builder.put(0x5541df4b1bddf20aL, Condition);
     builder.put(0x5fdf761311eeab8dL, Led);
     builder.put(0xddcad4713a4ce45L, Sensor);
+    builder.put(0x4c3ba29be07be552L, SerialAction);
+    builder.put(0x4c3ba29be079c152L, SerialCondition);
     builder.put(0x72062f1503ac8585L, State);
     builder.put(0x72062f1503ac89b2L, Transition);
     myIndex = builder.seal();
