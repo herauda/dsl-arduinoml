@@ -55,6 +55,7 @@
   <node concept="1TIwiD" id="RsFksjCZcf">
     <property role="EcuMT" value="998863738153202447" />
     <property role="TrG5h" value="Actuator" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="RsFksjCXYg" resolve="Brick" />
     <node concept="PrWs8" id="RsFksjCZtK" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -109,6 +110,7 @@
   <node concept="1TIwiD" id="RsFksjDcT5">
     <property role="EcuMT" value="998863738153258565" />
     <property role="TrG5h" value="Sensor" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="RsFksjCXYg" resolve="Brick" />
     <node concept="PrWs8" id="7U3lCXfxfXs" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -209,15 +211,20 @@
       <ref role="20lvS9" node="RsFksjDcT5" resolve="Sensor" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4KVCDJwuYli">
+    <property role="EcuMT" value="5493162960878298450" />
+    <property role="TrG5h" value="SerialAction" />
+    <ref role="1TJDcQ" node="786bLk3F8y3" resolve="Action" />
+  </node>
   <node concept="1TIwiD" id="4KVCDJwus5i">
     <property role="EcuMT" value="5493162960878158162" />
     <property role="TrG5h" value="SerialCondition" />
     <ref role="1TJDcQ" node="5l1ROGrRv8a" resolve="Condition" />
   </node>
-  <node concept="1TIwiD" id="4KVCDJwuYli">
-    <property role="EcuMT" value="5493162960878298450" />
-    <property role="TrG5h" value="SerialAction" />
-    <ref role="1TJDcQ" node="786bLk3F8y3" resolve="Action" />
+  <node concept="1TIwiD" id="5ZvtxchVEId">
+    <property role="EcuMT" value="6908370177686940557" />
+    <property role="TrG5h" value="Led" />
+    <ref role="1TJDcQ" node="RsFksjCZcf" resolve="Actuator" />
   </node>
 </model>
 

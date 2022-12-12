@@ -16,7 +16,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Button;
   private ConceptPresentation props_Buzzer;
   private ConceptPresentation props_Condition;
+  private ConceptPresentation props_Led;
   private ConceptPresentation props_Sensor;
+  private ConceptPresentation props_SerialAction;
+  private ConceptPresentation props_SerialCondition;
   private ConceptPresentation props_State;
   private ConceptPresentation props_Transition;
 
@@ -35,7 +38,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Actuator:
         if (props_Actuator == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
           props_Actuator = cpb.create();
         }
         return props_Actuator;
@@ -73,13 +75,33 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Condition = cpb.create();
         }
         return props_Condition;
+      case LanguageConceptSwitch.Led:
+        if (props_Led == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Led = cpb.create();
+        }
+        return props_Led;
       case LanguageConceptSwitch.Sensor:
         if (props_Sensor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
           props_Sensor = cpb.create();
         }
         return props_Sensor;
+      case LanguageConceptSwitch.SerialAction:
+        if (props_SerialAction == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0x72062f1503ac8883L, 0x72062f1503aca062L, "actuator", "", "");
+          props_SerialAction = cpb.create();
+        }
+        return props_SerialAction;
+      case LanguageConceptSwitch.SerialCondition:
+        if (props_SerialCondition == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x3e84098b58f348f4L, 0x85d9fe67fc1ba374L, 0x5541df4b1bddf20aL, 0x5541df4b1bddf95fL, "sensor", "", "");
+          props_SerialCondition = cpb.create();
+        }
+        return props_SerialCondition;
       case LanguageConceptSwitch.State:
         if (props_State == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
