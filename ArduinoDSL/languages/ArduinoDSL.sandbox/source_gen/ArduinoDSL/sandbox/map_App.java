@@ -23,9 +23,9 @@ public class map_App {
     System.out.print("digitalRead(" + 12 + ") == " + "true" + " && ");
     System.out.println(" guard ) {");
     System.out.println("    time = millis();");
-    System.out.println("  digitalWrite(" + 9 + "," + "true" + ");");
     System.out.println("    " + "led" + "();");
     System.out.println("  } else {");
+    System.out.println("  digitalWrite(" + 9 + "," + "true" + ");");
     System.out.println("    " + "buzz" + "();");
     System.out.println("  }");
     System.out.println("}");
@@ -37,10 +37,10 @@ public class map_App {
     System.out.print("digitalRead(" + 12 + ") == " + "true" + " && ");
     System.out.println(" guard ) {");
     System.out.println("    time = millis();");
-    System.out.println("  digitalWrite(" + 9 + "," + "false" + ");");
-    System.out.println("  digitalWrite(" + 12 + "," + "true" + ");");
     System.out.println("    " + "off" + "();");
     System.out.println("  } else {");
+    System.out.println("  digitalWrite(" + 9 + "," + "false" + ");");
+    System.out.println("  digitalWrite(" + 12 + "," + "true" + ");");
     System.out.println("    " + "led" + "();");
     System.out.println("  }");
     System.out.println("}");
@@ -52,9 +52,9 @@ public class map_App {
     System.out.print("digitalRead(" + 12 + ") == " + "true" + " && ");
     System.out.println(" guard ) {");
     System.out.println("    time = millis();");
-    System.out.println("  digitalWrite(" + 12 + "," + "false" + ");");
     System.out.println("    " + "buzz" + "();");
     System.out.println("  } else {");
+    System.out.println("  digitalWrite(" + 12 + "," + "false" + ");");
     System.out.println("    " + "off" + "();");
     System.out.println("  }");
     System.out.println("}");
