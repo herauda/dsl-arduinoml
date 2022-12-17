@@ -125,7 +125,7 @@
       </node>
       <node concept="1LEEum" id="4etlb08PUY8" role="1LEC8D">
         <property role="1LEF9_" value="786bLk3F9_z/true" />
-        <ref role="1LECXR" node="4etlb08PUB8" resolve="buzzer" />
+        <ref role="1LECXR" node="5ZvtxchWo3D" resolve="buzzer" />
       </node>
       <node concept="1LEEqB" id="4etlb08PUAt" role="1LEDPh">
         <property role="1LEFRJ" value="786bLk3F9AA/false" />
@@ -178,7 +178,7 @@
       </node>
       <node concept="1LEEum" id="4etlb08PVvY" role="1LEC8D">
         <property role="1LEF9_" value="786bLk3F9AA/false" />
-        <ref role="1LECXR" node="4etlb08PUB8" resolve="buzzer" />
+        <ref role="1LECXR" node="5ZvtxchWo3D" resolve="buzzer" />
       </node>
     </node>
   </node>

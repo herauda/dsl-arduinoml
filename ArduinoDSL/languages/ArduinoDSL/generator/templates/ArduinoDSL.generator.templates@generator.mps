@@ -272,6 +272,20 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2iTN7tLodu3" role="3cqZAp">
+          <node concept="2OqwBi" id="2iTN7tLodu4" role="3clFbG">
+            <node concept="10M0yZ" id="2iTN7tLodu5" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="2iTN7tLodu6" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <node concept="Xl_RD" id="2iTN7tLodu7" role="37wK5m">
+                <property role="Xl_RC" value="  Serial.begin(9600);" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="786bLk3E2AW" role="3cqZAp">
           <node concept="2OqwBi" id="786bLk3E2AX" role="3clFbG">
             <node concept="10M0yZ" id="786bLk3E2AY" role="2Oq$k0">
@@ -1253,7 +1267,7 @@
                   <node concept="3cpWs3" id="4KVCDJwxbmg" role="3uHU7B">
                     <node concept="3cpWs3" id="4KVCDJwxao2" role="3uHU7B">
                       <node concept="Xl_RD" id="4KVCDJwx9iB" role="3uHU7B">
-                        <property role="Xl_RC" value="Serial.read(" />
+                        <property role="Xl_RC" value="    Serial.read(" />
                       </node>
                       <node concept="3cmrfG" id="4KVCDJwxaqd" role="3uHU7w">
                         <property role="3cmrfH" value="0" />
@@ -1338,7 +1352,7 @@
                   <node concept="3cpWs3" id="4KVCDJwxm_5" role="3uHU7B">
                     <node concept="3cpWs3" id="4KVCDJwxlA4" role="3uHU7B">
                       <node concept="Xl_RD" id="4KVCDJwxkv8" role="3uHU7B">
-                        <property role="Xl_RC" value="   Serial.write(" />
+                        <property role="Xl_RC" value="    Serial.write(" />
                       </node>
                       <node concept="3cmrfG" id="4KVCDJwxlCD" role="3uHU7w">
                         <property role="3cmrfH" value="0" />
